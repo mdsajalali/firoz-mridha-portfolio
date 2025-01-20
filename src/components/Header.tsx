@@ -27,7 +27,7 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline">
+                <Link href="/media" className="hover:underline">
                   Media
                 </Link>
               </li>
@@ -107,7 +107,7 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline">
+                <Link href="/media" className="hover:underline">
                   Media
                 </Link>
               </li>
