@@ -8,7 +8,7 @@ interface SliderArrowBtnProps {
 const SliderArrowBtn = ({ direction, className }: SliderArrowBtnProps) => {
   return (
     <div
-      className={`${className} flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-black hover:bg-blue-600 bg-[#F4F8FF] text-2xl text-black transition-colors duration-300 hover:bg-primary hover:text-white sm:h-12 sm:w-12`}
+      className={`${className} flex h-9 w-9 cursor-pointer items-center justify-center rounded-full    bg-primary text-2xl text-white hover:bg-gray-300 transition-colors duration-300    hover:text-white sm:h-12 sm:w-12`}
     >
       {direction === "left" ? <GoArrowLeft /> : <GoArrowRight />}
     </div>

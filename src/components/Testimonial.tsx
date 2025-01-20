@@ -11,11 +11,11 @@ import SliderArrowBtn from "./shared/SliderArrowBtn";
 
 const Testimonial = () => {
   return (
-    <div className="bg-blue-700 text-white py-10">
+    <div className="bg-white py-10">
       <Container>
         <div className="text-center mb-8">
-          <h2 className="text-4xl font-semibold mb-4">What People Say</h2>
-          <p className="text-lg">
+          <h2 className="text-4xl text-primary font-semibold mb-4">What People Say</h2>
+          <p className="text-lg text-primary">
             Hear from those who have experienced our services and offerings.
           </p>
         </div>
@@ -41,7 +41,7 @@ const Testimonial = () => {
           >
             {/* Slide 1 */}
             <SwiperSlide>
-              <div className="flex flex-col md:flex-row items-center justify-center gap-6 bg-blue-600 p-6 rounded-lg">
+              <div className="flex flex-col md:flex-row items-center justify-center gap-6  text-black p-6 rounded-lg">
                 <div className="flex-1 text-center">
                   <h3 className="text-2xl font-bold mb-2">John Doe</h3>
                   <p className="text-lg lg:px-20 px-4">
@@ -55,7 +55,7 @@ const Testimonial = () => {
 
             {/* Slide 2 */}
             <SwiperSlide>
-              <div className="flex flex-col md:flex-row items-center justify-center gap-6 bg-blue-600 p-6 rounded-lg">
+              <div className="flex flex-col md:flex-row items-center justify-center gap-6  text-black p-6 rounded-lg">
                 <div className="flex-1 text-center">
                   <h3 className="text-2xl font-bold mb-2">Jane Smith</h3>
                   <p className="text-lg lg:px-20 px-4">

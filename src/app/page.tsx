@@ -8,14 +8,14 @@ import Testimonial from "@/components/Testimonial";
 
 const page = () => {
   return (
-    <>
+    <div className="bg-primary text-white">
       <Header />
       <Hero />
       <Intro />
       <Gallery />
       <Testimonial />
       <Footer />
-    </>
+    </div>
   );
 };
 

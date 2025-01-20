@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-600 text-white text-center py-6 flex flex-col items-center justify-center">
+    <footer className="  text-center py-6 flex flex-col items-center justify-center">
       <p className="text-lg font-bold mb-2">Kayla Padilla</p>
       <p className="mb-4">Current song on repeat:</p>
       <iframe
