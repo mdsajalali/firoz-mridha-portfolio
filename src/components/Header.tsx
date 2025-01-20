@@ -14,8 +14,8 @@ export default function Header() {
     <div className="bg-blue-700 text-white">
       {/* Navbar */}
       <Container>
-        <header className="  text-white">
-          <nav className="flex items-center justify-between   py-4">
+        <header className="text-white">
+          <nav className="flex items-center justify-between py-4">
             {/* Brand */}
             <h1 className="text-lg font-semibold">Firoz Mridha</h1>
 
@@ -80,19 +80,18 @@ export default function Header() {
             </div>
 
             {/* Mobile Menu Icon */}
-            <button className="md:hidden text-white focus:outline-none">
-              {isOpen ? (
-                <Menu size={28} />
-              ) : (
-                <Menu onClick={toggleSidebar} size={28} />
-              )}
+            <button
+              className="md:hidden text-white focus:outline-none"
+              onClick={toggleSidebar}
+            >
+              {isOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
           </nav>
 
           {/* Sidebar */}
           <div
-            className={`fixed inset-y-0 left-0 w-3/4 bg-blue-700 text-white transform ${
-              isOpen ? "translate-x-0" : "-translate-x-full"
+            className={`fixed inset-y-0 right-0 w-3/4 bg-blue-700 text-white transform ${
+              isOpen ? "translate-x-0" : "translate-x-full"
             } transition-transform duration-300 ease-in-out md:hidden`}
           >
             <div className="flex flex-col h-full">
