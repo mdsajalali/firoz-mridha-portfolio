@@ -16,7 +16,9 @@ export default function Header() {
       <header className="text-white">
         <nav className="flex items-center justify-between py-4">
           {/* Brand */}
-          <h1 className="text-lg font-semibold">Firoz Mridha</h1>
+          <Link href="/" className="text-lg font-semibold">
+            Firoz Mridha
+          </Link>
 
           {/* Desktop Links */}
           <div className="hidden md:flex items-center space-x-6">

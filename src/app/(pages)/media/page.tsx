@@ -8,7 +8,7 @@ const page = () => {
       src: "/penntoday.jpeg",
       alt: "Sample Image 1",
       description: "This is the first sample image description.",
-      link: "https://penntoday.upenn.edu/news/kayla-padilla-leads-example-penn-basketball",  
+      link: "https://penntoday.upenn.edu/news/kayla-padilla-leads-example-penn-basketball",
     },
     {
       src: "/penntoday.jpeg",
@@ -54,9 +54,28 @@ const page = () => {
     },
   ];
 
+  const videos = [
+    {
+      src: "https://www.youtube.com/embed/khnokW3Mw24?si=Y6V43cp-wObgguTn",
+      alt: "Sample Video 1",
+      description: "This is the first video description.",
+    },
+    {
+      src: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      alt: "Sample Video 2",
+      description: "This is the second video description.",
+    },
+    {
+      src: "https://www.youtube.com/embed/tgbNymZ7vqY",
+      alt: "Sample Video 3",
+      description: "This is the third video description.",
+    },
+  ];
+
   return (
     <div className="py-10">
       <Container>
+        {/* Images */}
         <h1 className="text-2xl font-bold text-center ">Media</h1>
         <p className="text-[18px] font-medium text-center mb-8">
           Click on each picture to learn more
@@ -79,6 +98,37 @@ const page = () => {
               </div>
             </div>
           ))}
+        </div>
+        {/* Videos */}
+        <div className="pt-20">
+          <h1 className="text-2xl font-bold text-center mb-6">Video Gallery</h1>
+          <p className="text-[18px] font-medium text-center mb-8">
+            Explore videos below with detailed descriptions
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {videos.map((video, index) => (
+              <div
+                key={index}
+                className="bg-white shadow-md rounded-lg overflow-hidden"
+              >
+                {/* Video Section */}
+                <div className="relative w-full h-48">
+                  <iframe
+                    src={video.src}
+                    title={video.alt}
+                    className="absolute top-0 left-0 w-full h-full"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                {/* Description Section */}
+                <div className="p-4">
+                  <p className="text-sm text-gray-700">{video.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </Container>
     </div>
