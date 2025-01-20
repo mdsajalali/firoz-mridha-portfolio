@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Menu, X, Mail, Twitter, Linkedin } from "lucide-react";
 import Container from "./shared/Container";
+import Link from "next/link";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,42 +22,42 @@ export default function Header() {
           <div className="hidden md:flex items-center space-x-6">
             <ul className="flex space-x-6">
               <li>
-                <a href="#" className="hover:underline">
+                <Link href="/contact" className="hover:underline">
                   Contact
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <Link href="#" className="hover:underline">
                   Media
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <Link href="#" className="hover:underline">
                   Projects
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <Link href="#" className="hover:underline">
                   Resume
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <Link href="#" className="hover:underline">
                   Resources
-                </a>
+                </Link>
               </li>
             </ul>
 
             {/* Social Icons */}
             <div className="flex items-center space-x-4">
-              <a
+              <Link
                 href="mailto:example@gmail.com"
                 className="hover:text-gray-300"
                 aria-label="Gmail"
               >
                 <Mail size={20} />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://twitter.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -64,8 +65,8 @@ export default function Header() {
                 aria-label="Twitter"
               >
                 <Twitter size={20} />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://linkedin.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -73,7 +74,7 @@ export default function Header() {
                 aria-label="LinkedIn"
               >
                 <Linkedin size={20} />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -88,7 +89,7 @@ export default function Header() {
 
         {/* Sidebar */}
         <div
-          className={`fixed inset-y-0 right-0 w-3/4 bg-blue-700 text-white transform ${
+          className={`fixed inset-y-0 right-0 w-3/4 bg-primary text-white transform ${
             isOpen ? "translate-x-0" : "translate-x-full"
           } transition-transform duration-300 ease-in-out md:hidden`}
         >
@@ -101,42 +102,42 @@ export default function Header() {
             </button>
             <ul className="space-y-6 text-lg px-6 mt-6">
               <li>
-                <a href="#" className="hover:underline">
+                <Link href="/contact" className="hover:underline">
                   Contact
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <Link href="#" className="hover:underline">
                   Media
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <Link href="#" className="hover:underline">
                   Projects
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <Link href="#" className="hover:underline">
                   Resume
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <Link href="#" className="hover:underline">
                   Resources
-                </a>
+                </Link>
               </li>
             </ul>
 
             {/* Social Icons in Sidebar */}
             <div className="flex space-x-4 px-6 mt-8">
-              <a
+              <Link
                 href="mailto:example@gmail.com"
                 className="hover:text-gray-300"
                 aria-label="Gmail"
               >
                 <Mail size={24} />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://twitter.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -144,8 +145,8 @@ export default function Header() {
                 aria-label="Twitter"
               >
                 <Twitter size={24} />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://linkedin.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -153,7 +154,7 @@ export default function Header() {
                 aria-label="LinkedIn"
               >
                 <Linkedin size={24} />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
