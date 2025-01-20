@@ -34,17 +34,17 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline">
+                <Link href="/projects" className="hover:underline">
                   Projects
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline">
+                <Link href="resume" className="hover:underline">
                   Resume
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline">
+                <Link href="/internship" className="hover:underline">
                   Resources
                 </Link>
               </li>
@@ -114,17 +114,17 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline">
+                <Link href="/projects" className="hover:underline">
                   Projects
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline">
+                <Link href="/resume" className="hover:underline">
                   Resume
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline">
+                <Link href="/internship" className="hover:underline">
                   Resources
                 </Link>
               </li>
